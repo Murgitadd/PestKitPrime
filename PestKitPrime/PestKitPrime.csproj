@@ -17,10 +17,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\PestAdmin\Controllers\" />
     <Folder Include="Areas\PestAdmin\Data\" />
     <Folder Include="Areas\PestAdmin\Models\" />
-    <Folder Include="Areas\PestAdmin\Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\fonts\.DS_Store" />
+    <None Include="wwwroot\admin\fonts\Roboto\.DS_Store" />
+    <None Include="wwwroot\admin\images\.DS_Store" />
+    <None Include="wwwroot\admin\images\auth\.DS_Store" />
+    <None Include="wwwroot\admin\images\faces\.DS_Store" />
+    <None Include="wwwroot\admin\js\.DS_Store" />
+    <None Include="wwwroot\admin\vendors\.DS_Store" />
   </ItemGroup>
 
 </Project>

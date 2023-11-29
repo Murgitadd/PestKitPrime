@@ -50,10 +50,17 @@ namespace PestKitPrime.Migrations
                     b.Property<int>("AuthorId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CommentCount")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -151,11 +158,13 @@ namespace PestKitPrime.Migrations
 
             modelBuilder.Entity("PestKitPrime.Models.Blog", b =>
                 {
-                    b.HasOne("PestKitPrime.Models.Author", null)
+                    b.HasOne("PestKitPrime.Models.Author", "Author")
                         .WithMany("Blogs")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Author");
                 });
 
             modelBuilder.Entity("PestKitPrime.Models.Employee", b =>

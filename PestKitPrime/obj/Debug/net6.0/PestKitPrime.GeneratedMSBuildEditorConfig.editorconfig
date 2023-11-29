@@ -18,6 +18,54 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\hp\source\repos\PestKitPrime\PestKitPrime
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Author/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXEF1dGhvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Author/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXEF1dGhvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Author/More.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXEF1dGhvclxNb3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Author/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXEF1dGhvclxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Blog/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXEJsb2dcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXEJsb2dcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Blog/More.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXEJsb2dcTW9yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Blog/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXEJsb2dcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Areas/PestAdmin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGVzdEFkbWluXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hp/source/repos/PestKitPrime/PestKitPrime/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

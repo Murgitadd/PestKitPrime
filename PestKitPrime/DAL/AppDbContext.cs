@@ -14,5 +14,6 @@ namespace PestKitPrime.DAL
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Position> Positions { get; set; }
+        
     }
 }
