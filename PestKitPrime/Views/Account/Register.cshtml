@@ -1,0 +1,62 @@
+﻿@model PestKitPrime.ViewModels.Account.RegisterVM
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5">
+    <div class="container text-center py-5">
+        <h1 class="display-2 text-white mb-4 animated slideInDown">Register</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item text-white" aria-current="page">Register</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Register Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row">
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <div class="col-4 offset-4">
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Name</label>
+                        <input asp-for="Name" class="form-control" >
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Surname" class="form-label">Surname</label>
+                        <input asp-for="Surname" class="form-control">
+                        <span asp-validation-for="Surname" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Username" class="form-label">Username</label>
+                        <input asp-for="Username" class="form-control">
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email</label>
+                        <input asp-for="Email" class="form-control">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password</label>
+                        <input asp-for="Password" class="form-control" name="Password">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ConfirmPassword" class="form-label">Confirm Password</label>
+                        <input asp-for="ConfirmPassword" class="form-control" name="ConfirmPassword">
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-warning w-100">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Register End -->

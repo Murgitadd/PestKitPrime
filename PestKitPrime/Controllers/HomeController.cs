@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PestKitPrime.DAL;
+using PestKitPrime.Migrations;
 using PestKitPrime.Models;
 using PestKitPrime.ViewModels;
 using System.Diagnostics;
@@ -18,15 +20,11 @@ namespace PestKitPrime.Controllers
 
         public IActionResult Index()
         {
-            List<Blog> blog = _context.Blogs.ToList();
+            List<Blog> blog = _context.Blogs.Include(p => p.Author).ToList();
             List<Employee> employees = _context.Employees.ToList();
-            HomeVM homeVM = new HomeVM { Blogs = blog, Employees = employees };
+            List<Product> products = _context.Products.ToList();
+            HomeVM homeVM = new HomeVM { Blogs = blog, Employees = employees ,Products=products};
             return View(homeVM);
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
         }
     }
 }

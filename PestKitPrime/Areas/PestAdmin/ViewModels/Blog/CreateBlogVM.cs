@@ -19,5 +19,6 @@ namespace PestKitPrime.Areas.PestAdmin.ViewModels
         public int? AuthorId { get; set; }
         [Required]
         public int CommentCount { get; set; }
+
     }
 }
