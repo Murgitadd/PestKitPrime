@@ -19,9 +19,37 @@ namespace PestKitPrime.Controllers
             _layoutService = layoutService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            List<BasketItemVM> basketVM = new List<BasketItemVM>();
+
+            if (Request.Cookies["Basket"] is not null)
+            {
+                List<BasketCookieItemVM> basket = JsonConvert.DeserializeObject<List<BasketCookieItemVM>>(Request.Cookies["Basket"]);
+
+                foreach (var basketCookieItem in basket)
+                {
+                    List<Product> products = await _context.Products.Include(p => p.Id == basketCookieItem.Id).ToListAsync();
+                    if (products is not null)
+                    {
+                        foreach (var product in products)
+                        {
+                            BasketItemVM basketItemVM = new BasketItemVM
+                            {
+                                Id = product.Id,
+                                Name = product.Name,
+                                Price = product.Price,
+                                Count = basketCookieItem.Count,
+                                SubTotal = product.Price * basketCookieItem.Count
+                            };
+                        basketVM.Add(basketItemVM);
+                        }
+                    }
+                }
+            }
+
+
+            return View(basketVM);
         }
 
         public async Task<IActionResult> AddItemAsync(int id)
