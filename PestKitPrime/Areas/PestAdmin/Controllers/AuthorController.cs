@@ -59,5 +59,35 @@ namespace PestKitPrime.Areas.PestAdmin.Controllers
             if (author == null) { return NotFound(); }
             return View(author);
         }
+
+
+        public async Task<IActionResult> Update(int id)
+        {
+            if (id <= 0) { return BadRequest(); }
+            Author author = await _context.Authors.FirstOrDefaultAsync(c => c.Id == id);
+            if (author == null) { return NotFound(); }
+            CreateUpdateAuthorVM authorVM = new CreateUpdateAuthorVM
+            {
+                Name = author.Name
+            };
+            return View(authorVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(int id, CreateUpdateAuthorVM authorVM)
+        {
+            if (!ModelState.IsValid) { return View(authorVM); };
+            Author exist = await _context.Authors.FirstOrDefaultAsync(c => c.Id == id);
+            if (exist == null) { return NotFound(); };
+            bool result = await _context.Authors.AnyAsync(c => c.Name.Trim().ToLower() == exist.Name.Trim().ToLower()&& c.Id != id);
+            if (result)
+            {
+                ModelState.AddModelError("Name", "This Category exists.");
+                return View(exist);
+            }
+            exist.Name = authorVM.Name;
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

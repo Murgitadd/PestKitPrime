@@ -25,7 +25,7 @@
                         <option selected disabled>Choose Author</option>
                         @foreach (Author author in ViewBag.Authors)
                         {
-                            <option value="@author.Id">@author.Name @author.Name</option>
+                            <option value="@author.Id">@author.Name</option>
                         }
                     </select>
                     <span asp-validation-for="AuthorId" class="text-danger"></span>

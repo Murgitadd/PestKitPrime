@@ -5,17 +5,17 @@ namespace PestKitPrime.Areas.PestAdmin.ViewModels
 {
     public class CreateBlogVM
     {
-        [Required(ErrorMessage = "Title must be entered mutled")]
-        [MaxLength(50, ErrorMessage = "It should not exceed 25 characters")]
+        [Required(ErrorMessage = "Title can not be empty!")]
+        [MaxLength(50, ErrorMessage = "Title should be `1-50 letters long.")]
         public string Title { get; set; }
-        [Required(ErrorMessage = "Descriptoin must be entered mutled")]
-        [MaxLength(100, ErrorMessage = "It should not exceed 100 characters")]
+        [Required(ErrorMessage = "Description can not be empty!")]
+        [MaxLength(100, ErrorMessage = "Title should be `1-100 letters long.")]
         public string Description { get; set; }
         public DateTime DateTime { get; set; }
         [Required]
         public IFormFile Photo { get; set; }
         [Required]
-        [Range(1, int.MaxValue, ErrorMessage = "Author must be greater than 0 ")]
+        [Range(1, int.MaxValue, ErrorMessage = "There can not be no authors.")]
         public int? AuthorId { get; set; }
         [Required]
         public int CommentCount { get; set; }
